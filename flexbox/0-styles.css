@@ -1,4 +1,4 @@
- /* SUMMARY
+/* SUMMARY
     1. GLOBAL
     2. LAYOUT
     3. SECTION
@@ -187,13 +187,7 @@
     padding: 0;
     list-style: none;
   }
-  
 
-  
-  [class*=col-] {
-   
-    padding: 0.5rem;
-  }
   
   .col-1-3 {
     width: 33.33%;
@@ -209,7 +203,7 @@
   .navbar-menu {
     float: right;
   }
-    
+  
   .nav {
     margin: 0;
     padding: 0;
@@ -292,7 +286,7 @@
   .footer ul {
     text-align: right;
   }
-   
+  
   .footer-address {
     color: var(--text-color);
   }
@@ -381,7 +375,7 @@
     color: var(--color-primary);
   }
   
-   /* Card WORK
+  /* Card WORK
       ============================= */
   
   .card-work .card-outer {
@@ -498,4 +492,4 @@
     color: #efeded;
     font-size: 10rem;
     z-index: -1;
-  } 
+  }
