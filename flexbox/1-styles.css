@@ -187,7 +187,7 @@
     padding: 0;
     list-style: none;
   }
- [class*=col-] {
+[class*=col-] {
 
     padding: 0.5rem;
   }
@@ -196,7 +196,7 @@
     width: 33.33%;
   }
   
-  .col-1-2 {
+   .col-1-2 {
     width: 50%;
   }
   
@@ -285,11 +285,12 @@
     font-size: var(--font-size-small);
     color: var(--text-color);
   }
-   .footer ul {
+  
+  .footer ul {
     text-align: right;
   }
   
-  .footer-address {
+   .footer-address {
     color: var(--text-color);
   }
   
@@ -350,7 +351,104 @@
     background-color: #010101;
   }
   
-   .card-services .card-title {
+  /* Section HERO
+      ============================= */
+  
+  .section-hero {
+    background-position: 75% 0;
+    background-repeat: no-repeat;
+    background-size: 90rem auto;
+    background-color: #010101;
+  }
+  
+  .section-hero .section-title {
+    margin-bottom: 5rem;
+  }
+  
+  .section-hero .section-inner {
+    padding: 10rem 40rem 2rem 0;
+  }
+  
+  /*** 4. CARD ***/
+  
+  /* Card (all styles)
+      ============================= */
+  
+  .card-category {
+    color: var(--color-primary);
+  }
+  
+  /* Card WORK
+      ============================= */
+  .section-works{
+  }
+  .card-work .card-outer {
+    position: relative;
+    overflow: hidden;
+  }
+   .card-work:hover .card-outer {
+    transform: scale(0.95);
+  }
+  
+  .card-work .card-image img {
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+  }
+  
+  .card-work:hover .card-image {
+    transform: scale(1.2);
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+  }
+  
+  .card-work .card-inner {
+    position: absolute;
+    top: -0.1rem;
+    left: -0.1rem;
+    right: -0.1rem;
+    bottom: -0.1rem;
+    z-index: 1;
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+  }
+  
+  .card-work:hover .card-inner {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .card-work .card-title {
+    text-align: center;
+    margin: 0;
+    opacity: 0;
+    height: 100%;
+    position: relative;
+  }
+  
+  .card-work .card-title a {
+    display: block;
+    text-decoration: none;
+    padding-top: 45%;
+  }
+  
+  .card-work .card-title a::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: ;
+  }
+  
+  .card-work:hover .card-title {
+    opacity: 1;
+  }
+  
+  /* Card SERVICES
+      ============================= */
+  .section-services{
+  
+  }
+  .card-services .card-title {
     margin: 0;
   }
   
@@ -400,10 +498,4 @@
     color: #efeded;
     font-size: 10rem;
     z-index: -1;
-  }
-  .section-about-us{
-  }
-  .section-latest-news{
-  }
-  .section-contact{
   }
